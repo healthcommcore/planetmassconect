@@ -109,7 +109,7 @@ pageHit($page_title, $community, $organization,$sessionid, $ip_address);
 <!--[if lte IE 7]>
 <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/pmc_template/css/styles.ie7.css" type="text/css" />
 <![endif]-->
-<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/pmc_template/js/accordion_menu.js"></script>
+<!--<script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/pmc_template/js/accordion_menu.js"></script>-->
 <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/pmc_template/js/dropdown.js"></script>
 </head>
 <script type="text/javascript">
