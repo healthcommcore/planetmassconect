@@ -1,0 +1,4 @@
+<div class="commentBlogView"> 
+	    	<div class="show-linkmore"> <a href="%LINK_READMORE%"> Read More </a> </div>
+    	    	<div class="show-comment"> <a href="%LINK_COMMENT%"> Add Comment (%COMMENTS%)</a> </div>
+        </div>

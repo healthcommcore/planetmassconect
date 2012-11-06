@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>Glossary</name>
+	<author>Therese Lung (HCC)</author>
+	<creationDate>November 2009</creationDate>
+	<copyright>Copyright (C) 2009 DFCI.</copyright>
+	<license></license>
+	<authorEmail>therese_lung@dfci.harvard.edu</authorEmail>
+	<authorUrl>www.hccstudio.org</authorUrl>
+	<version>1.0</version>
+	<description>A component for creating and managing Glossary items</description>
+<installfile>install.glossary.php</installfile>
+<uninstallfile>uninstall.glossary.php</uninstallfile>
+<install>
+	<sql>
+	<file driver="mysql" charset="utf8">install.mysql.sql</file>
+	</sql>
+</install>
+<uninstall>
+	<sql>
+	<file driver="mysql" charset="utf8">uninstall.mysql.sql</file>
+	</sql>
+</uninstall>
+<files>
+	<filename>controller.php</filename>
+	<filename>glossary.php</filename>
+	<filename>models/glossary.php</filename>
+	<filename>views/glossary/metadata.xml</filename>
+	<filename>views/glossary/view.html.php</filename>
+	<filename>views/glossary/tmpl/default.php</filename>	
+</files>
+<administration>
+	<menu>Frame URL</menu>
+	<submenu>
+		<menu link="option=com_glossary">Manage Glossary</menu>
+	</submenu>
+	<files folder="admin">
+	<filename>install.mysql.sql</filename>
+	<filename>uninstall.mysql.sql</filename>
+	<filename>admin.glossary.html.php</filename>
+	<filename>admin.glossary.php</filename>
+	<filename>controller.php</filename>
+	<filename>tables/glossary.php</filename>
+	<filename>toolbar.glossary.html.php</filename>
+	<filename>toolbar.glossary.php</filename>
+	</files>
+</administration>
+</install>

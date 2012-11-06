@@ -1,0 +1,73 @@
+
+
+/************LAYOUT***********/
+
+/*To provide space for absolute positioned menu items*/
+#header{padding-bottom:35px;}
+#step_column2{position:absolute; margin-left:-10px;}
+#step_container{height:122px;}
+.contentpane .wrapper{margin-top:7px;}
+.clr{height:3px;}
+#step_copy p{margin: 8px 0 0 0;}
+#column_right{background:url("../images/header1_end.png") 0 1px no-repeat;}
+
+
+/*********MAIN MENU**********/
+
+/*positioned absolute to avoid affecting rounded corners of page body*/
+#main_menu{position:absolute; margin-top:-26px; z-index:5;}
+#discussion{width:130px; position:absolute; margin:-26px 0 0 690px;}
+
+/*Added position:relative to prevent top of current menu items being cut off*/
+#main_menu #current{position:relative; background:url(../images/menu/active_left.png) 1px 0 no-repeat;}
+#discussion #current{ position:relative; margin-left:9px;}
+
+#main_menu ul li{float:left;}
+#main_menu ul li a {float:left;}
+#main_menu #current a{ background:url(../images/menu/active_right.png) 100% 0 no-repeat;}
+
+/*********STEP PAGES**********/
+
+.resourcemenu{ height:37px;margin-left:12px; margin-top:-11px;}
+.steps{margin:40px 5px 5px 25px;}
+.stepsheader{top:50px;}
+.steps ul{margin-left:45px;}
+.category, .step2list{border:1px solid #B3DAF4;}
+
+.moduletable-category h3, {position:absolute;}
+.moduletable-category ul{margin-top: 26px;}
+.AccordionContainer{padding-top:30px; margin-top:40px;}
+.AccordionContainer .header{position:absolute; margin:-45px 0 0 0;}
+
+.moduletable-recent ul{margin-left:20px;}
+.cols2{margin-bottom:20px;}
+.article_separator{display:none;}
+.readon{margin-top:-30px;}
+
+.iframelink{margin-left:0;}
+.howdoibox .content ul{margin-left:28px; padding-top:12px;}
+.home_box ul{margin:-15px 0 0 0;}
+.home_box{margin-top:0px;}
+.home_box p{margin-top:8px;}
+
+.instrbox{position:absolute; margin-top:-183px; margin-left:308px;}
+.iframewrapper{margin-top:30px;}
+
+
+/*********TOP MENU ITEMS***********/
+
+.search_header{position:relative; margin-left:0;}
+.results ul, #resource_module ul{list-style-image:none;}
+#resource_module ul ul{list-style-image:url(../images/bullet.png);}
+
+.awl-resource{padding-top:35px;}
+
+.glossarymenu{margin: 0 auto 20px auto; padding:5px 5px 10px 5px;}
+.glossarymenu ul{list-style:none; line-height: 150%; padding:10px 0; margin-left:10px;}
+.glossary_entry ul{margin-left:50px;}
+
+.moduletable-category ul ul {margin:5px 0 0 20px;}
+
+ 
+
+

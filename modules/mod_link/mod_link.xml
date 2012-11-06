@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5">
+  <name>Link</name>
+  <author>Therese Lung</author>
+  <creationDate>February 2010</creationDate>
+  <copyright>(C) 2010 Therese Lung</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <version>1.0</version>
+  <description>PLANET MassCONECT module for links</description>
+  <files>
+    <filename module="mod_link">mod_link.php</filename>
+</files>
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="show_ccplink" type="radio" default="0" label="Show Cancer Control PLANET link" description="PARAMSHOWCCPLINK">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="show_ebplink" type="radio" default="0" label="Show Evidence-Based Programs link" description="PARAMSHOWEBPLINK">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<!--param name="tips" type="sql" default="10" label="Select learn more links" query="SELECT id, title FROM #__content WHERE catid = 14" key_field="id" value_field="title" description="Select one or more items from the list.  You can use Ctrl-click to select more than one item."/-->
+
+		<param addpath="/libraries/joomla/html/parameter/element" name="links" type="sqlmultilist" default="10" multiple="multiple" label="Select one or more items from the list. You can use Ctrl-click (PC) or Apple-click (Mac) to select more than one item" query="SELECT id, title FROM #__pmc_tip ORDER BY ordering" key_field="id" value_field="title" description="Select one or more items from the list.  You can use Ctrl-click (PC) or Apple-click (Mac) to select more than one item."/>
+	</params>  
+</install>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Glossary">
+		<message>
+		<![CDATA[Shows all glossary terms.]]>
+		</message>
+	</view>
+	<params>
+		<param name="limit" type="text" size="3" default="5" label="Number of entries per page"  description="Enter the maximum number of entries to display per page" />
+	</params>
+</metadata>

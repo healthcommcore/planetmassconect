@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+  <name>All Weblinks</name>
+  <author>John Bekker / C. Schneider</author>
+  <creationDate>1/6/2008</creationDate>
+  <copyright>This module is released under the GNU/GPL License</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+  <authorEmail>john@sjlcreations.be</authorEmail>
+  <authorUrl>www.sjlcreations.be</authorUrl>
+  <version>2.0.7</version>
+  <description>
+  This module shows ALL weblinks on one page in columns or rowwise with lots of custom options. The weblinks will still be managed by Joomla!s integrated component.
+  </description>
+  <files>
+    <filename module="mod_allweblinks">mod_allweblinks.php</filename>
+		<filename module="mod_allweblinks">index.html</filename>
+		<filename module="mod_allweblinks">helper.php</filename>
+		<folder module="mod_allweblinks">res/</folder>
+		<folder module="mod_allweblinks">tmpl/</folder>
+  </files>
+  <params>
+    <param name="Lcatids" type="text" default="" label="Category id's" description="Specify here the id's of the categories to show/exclude (separated by comma)" />
+    <param name="Lexclude" type="radio" default="0" label="Exclude id's" description="State if category id's inserted above shall be excluded (yes) or shown (no)!">
+      <option value="0">No</option>
+      <option value="1">yes</option>
+    </param>
+    <param name="LCorder" type="list" default="a.catid" label="Category Sort order" description="Select were to sort the categories on">
+      <option value="a.catid">Category ID</option>
+      <option value="b.ordering">Ordering</option>
+    </param>
+    <param name="Lshownumlnk" type="radio" default="1" label="Show number of links" description="Display the number of links in each category?">
+      <option value="0">No</option>
+      <option value="1">yes</option>
+    </param>
+    <param name="Lshowcdes" type="radio" default="0" label="Show category description" description="Display the category description text?">
+      <option value="0">No</option>
+      <option value="1">yes</option>
+    </param>
+    <param name="Ldropdown" type="radio" default="1" label="Use dropdown function" description="Use links dropdown (show and hide) function by clicking on the category-title?">
+      <option value="0">No</option>
+      <option value="1">yes</option>
+    </param>
+    <param name="Lcaticons" type="imagelist" directory="/images/M_images" default="" label="Category-icon (show)" description="If using the above dropdown-function: choose here a category-icon which will be displayd in front of the category-title to show (dropdown) the links. [place own icons in /images or media/M_images]" />
+    <param name="Lcaticonh" type="imagelist" directory="/images/M_images" default="" label="Category-icon (hide)" description="If using the above dropdown-function: choose here a category-icon which will be displayd in front of the category-title to hide the links again. [place own icons in /images or media/M_images]" />
+
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="Lorder" type="list" default="Date" label="Link Sort order" description="Select were to sort on">
+      <option value="date DESC">Date DESC</option>
+      <option value="hits DESC">Hits DESC</option>
+      <option value="title">Title</option>
+      <option value="a.ordering">Ordering</option>
+    </param>
+    <param name="Licon" type="imagelist" directory="/images/M_images" hide_default="1" default="" label="Link-icon" description="Choose a link-icon which will be displayd in front of the weblink. [place icons (should not be larger than ~18x18) in /images or media/M_images]" />
+    <param name="Llengthoftitle" type="text" default="23" label="Length of title" description="Maximum number of characters before the linktitle is cut of." />
+    <param name="Ldotaddlenght" type="text" default="20" label="Length to cut off" description="Number of characters to use when title has to be shortened." />
+    <param name="Ltitlepopuptxt" type="text" default="" label="Title popup text" description="When a title popup text is inserted here, it will be displayd for every link. If left blank, either the description- or the weblink-text is used as the popup title." />
+    <param name="Lshowhits" type="radio" default="0" label="Show hits" description="Display the number of hits?">
+      <option value="0">No</option>
+      <option value="1">yes</option>
+    </param>
+    <param name="Lshownew" type="radio" default="0" label="Show new" description="Display if link is new?">
+      <option value="0">No</option>
+      <option value="1">yes</option>
+    </param>
+    <param name="Ldaysnew" type="text" default="3" label="Number of days link is new" description="Enter the number of day to show new link" />
+    <param name="Ltxtnew" type="text" default="*" label="Text to show on new links" description="Enter the text to shown on new links." />
+    <param name="Lshowldes" type="radio" default="1" label="Show link description" description="Display the link description text?">
+      <option value="0">No</option>
+      <option value="1">yes</option>
+    </param>
+    <param name="Lpopuplinks" type="radio" default="1" label="Open in new window" description="Open the link in a new window?">
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label="" description="" />
+    <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="e.g. leave blank for having just a list when using this module in a module position (categories with links below). When using the module within a content/article insert (if desired): _lnkcols for having the links in colums below the categories, or insert: _catcols for having the categories in e.g. colums (links below it in one column)" />
+  </params>
+</install>

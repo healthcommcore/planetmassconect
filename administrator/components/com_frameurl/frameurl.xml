@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+	<name>Frameurl</name>
+	<author>Therese Lung (HCC)</author>
+	<creationDate>October 2009</creationDate>
+	<copyright>Copyright (C) 2009 DFCI.</copyright>
+	<license></license>
+	<authorEmail>therese_lung@dfci.harvard.edu</authorEmail>
+	<authorUrl>www.hccstudio.org</authorUrl>
+	<version>1.0</version>
+	<description>A component for creating and managing Frame URLs</description>
+<installfile>install.frameurl.php</installfile>
+<uninstallfile>uninstall.frameurl.php</uninstallfile>
+<install>
+	<sql>
+	<file driver="mysql" charset="utf8">install.mysql.sql</file>
+	</sql>
+</install>
+<uninstall>
+	<sql>
+	<file driver="mysql" charset="utf8">uninstall.mysql.sql</file>
+	</sql>
+</uninstall>
+<files>
+	<filename>controller.php</filename>
+	<filename>frameurl.php</filename>
+	<filename>models/step.php</filename>
+	<filename>models/url.php</filename>
+	<filename>views/step/metadata.xml</filename>
+	<filename>views/step/view.html.php</filename>
+	<filename>views/step/tmpl/default.php</filename>
+	<filename>views/url/metadata.xml</filename>
+	<filename>views/url/view.html.php</filename>
+	<filename>views/url/tmpl/default.php</filename>	
+</files>
+<administration>
+	<menu>Frame URL</menu>
+	<submenu>
+		<menu link="option=com_frameurl">Manage Frame Links</menu>
+		<menu task="sections">Manage Sections</menu>
+		<menu task="steps">Manage Steps</menu>
+	</submenu>
+	<files folder="admin">
+	<filename>install.mysql.sql</filename>
+	<filename>uninstall.mysql.sql</filename>
+	<filename>admin.frameurl.html.php</filename>
+	<filename>admin.frameurl.php</filename>
+	<filename>controller.php</filename>
+	<filename>tables/frameurl.php</filename>
+	<filename>tables/step.php</filename>
+	<filename>tables/section.php</filename>
+	<filename>tables/tip.php</filename>
+	<filename>toolbar.frameurl.html.php</filename>
+	<filename>toolbar.frameurl.php</filename>
+	</files>
+</administration>
+</install>

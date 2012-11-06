@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="template">
+    <name>pmc_template</name>
+    <version>1.5.0</version>
+    <creationDate>08/07/09</creationDate>
+    <author>Dave Rothfarb</author>
+    <authorEmail>dave_rothfarb@dfci.harvard.edu</authorEmail>
+    <authorUrl>http://www.daverothfarb.com</authorUrl>
+    <copyright>Copyright 2009 - Health Communication Core</copyright>
+    <license>GNU/GPL</license>
+    <description>
+			<![CDATA[
+			<h1>PLANET MassCONECT</h1>
+
+			<br />
+			<h3>Changelog</h3>
+
+			<b>1.5.0</b><br />
+			<ul>
+			<li>Initial Release</li>
+			</ul>
+
+			]]>  	
+    </description>
+	<files>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>component.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>admin/</folder>
+		<folder>html/</folder>
+		<folder>css/</folder>
+		<folder>js/</folder>
+		<folder>images/</folder>
+	</files>
+	<positions>
+		<position>topnav</position>
+		<position>menu</position>
+		<position>discussion</position>
+		<position>content</position>
+		<position>column_right</position>
+		<position>column_left</position>
+		<position>resource_module</position>
+		<position>bottom</position>
+	</positions>
+	<administration>
+		<languages folder="admin">
+			<language tag="en-GB">en-GB.tpl_rt_afterburner_j15.ini</language>
+		</languages>
+	</administration>
+	
+</install>

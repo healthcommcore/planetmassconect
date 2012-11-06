@@ -1,0 +1,70 @@
+
+
+/************LAYOUT***********/
+
+/*To provide space for absolute positioned menu items*/
+#header{padding-bottom:35px;}
+#top_menu_right ul li{line-height:170%;}
+#top_menu_right ul {height:18px;}
+.contentpane .wrapper{margin-top:7px;}
+#content_component{position:relative; display:block; clear:both;}
+#roundedbottom{display:block;}
+.clr{clear:none;}
+#content_container, .search-area, .moduletable-resource, .help-area, .blog{position:relative;}
+#column_right{background:url("../images/header1_end.png") 0 1px no-repeat;}
+
+
+/*********MAIN MENU**********/
+
+/*positioned absolute to avoid affecting rounded corners of page body*/
+#main_menu{position:absolute; margin-top:-26px; z-index:5;}
+#discussion{position:absolute; margin:-26px 0 0 600px;}
+
+/*Added position:relative to prevent top of current menu items being cut off*/
+#main_menu #current{position:relative; background:url(../images/menu/active_left.png) 1px 0 no-repeat;}
+#discussion #current{ position:relative; margin-left:9px;}
+
+#main_menu ul li{float:left;}
+#main_menu ul li a {float:left;}
+#main_menu #current a{ background:url(../images/menu/active_right.png) 100% 0 no-repeat;}
+
+#discussion li{margin-left:4px;}
+#discussion li a{padding: 0 0 0 29px;}
+#discussion #current a{padding-left:21px;}
+.home_box{width:90%; padding-bottom:15px;}
+
+/*********STEP PAGES**********/
+
+
+.steps ul{margin-left:45px;}
+.category td{padding: 8px 12px;}
+
+.moduletable-category h3{position:absolute;}
+.moduletable-category ul{margin-top: 26px;}
+.category, .step2list{border:1px solid #B3DAF4;}
+.article_column{width:88%;}
+ 
+ /***********TOP MENU ITEM FIXES**********/
+ 
+.search_header{position:relative; margin-left:0;}
+
+
+#resource_module{margin-top:20px;}
+.results ul, #resource_module ul{list-style-image:none;}
+#resource_module ul ul{list-style-image:url(../images/bullet.png);}
+.results{margin-top:-40px;}
+.step4icons{position:relative;}
+
+/********** IFRAME PAGES *************/
+
+.howdoibox{position:relative;}
+.instrbox{position:relative;}
+.iframewrapper{position:relative; display:block; margin-bottom:25px;}
+.iframe_contentheading{}
+.iframelink{position:absolute;}
+.iframewrapper .content{width:100%;}
+
+.stepsheader{position:relative;	top:35px;left: 25px;font-weight:bold;margin:0;padding:5px 10px;	background:#5DAAE0;	color:#fff;}
+.resourcemenu{position:relative; display:block; padding:0; margin:0; left: -10px;}
+.resourcemenu li{margin-right:8px;}
+

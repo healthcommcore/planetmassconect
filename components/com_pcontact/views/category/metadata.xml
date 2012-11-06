@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<view title="Contact category list">
+		<message>
+		<![CDATA[Shows contact category listing.]]>
+		</message>
+	</view>
+	<params>
+		<param name="catID" type="text" size="3" default="" label="Category ID"  description="Enter the Category ID of the page listing to be displayed" />
+	</params>
+</metadata>
